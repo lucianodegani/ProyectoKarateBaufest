@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+      
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            
+        <meta charset="utf-8">
+            
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+            
+        <link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+            
+        <link href="res/karate-report.css" rel="stylesheet" type="text/css">
+            
+        <link href="favicon.ico" rel="shortcut icon">
+            <script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+        <title>PetStores.Pets</title>
+          
+    </head>
+      
+    <body>
+            
+        <div id="root-container">
+                  
+            <div id="leftnav">
+                        
+                <div class="nav-logo">
+                              <a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+                    <div class="nav-count">
+                                    
+                        <div class="bg-success" id="nav-pass">2</div>
+                                    
+                        <div class="bg-danger" id="nav-fail">1</div>
+                                  
+                    </div>
+                            
+                </div>
+                        
+                <div id="nav-type">Scenarios</div>
+                         
+        
+                <div id="nav-date">2021-02-25 11:17:44 p.&nbsp;m.</div>
+                        
+      
+                <div class="nav-container">
+                    <div class="nav-item passed">
+                        <a href="#[1:6]">[1:6] create a Pet and then get it by id </a>
+                    </div>
+                    <div class="nav-item passed">
+                        <a href="#[2:57]">[2:57] get Pet with specific id </a>
+                    </div>
+                    <div class="nav-item failed">
+                        <a href="#[3:71]">[3:71] Update a Pet with specific id </a>
+                    </div>
+                </div>
+            </div>
+                  
+            <div id="content">
+                      
+                <div class="page-heading alert alert-primary">
+                    <a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">PetStores/Pets.feature</span><span class="feature-description">Proyecto Pets Stores Baufest</span>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[1:6]">
+                        <div class="heading-container">
+                            <div class="scenario-tags"></div>
+                            <span class="scenario-keyword">Scenario: [1:6]</span><span class="scenario-name">create a Pet and then get it by id </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 2720</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[1:6]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[1:6]bg">
+                        <div class="step-container" id="1">
+                            <div class="step-ref bg-step">1</div>
+                            <div class="step-cell passed">* url 'https://petstore.swagger.io/v2/pet/'</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="preformatted" data-parent="1">23:17:39.699 karate.env system property was:</div>
+                    <div class="step-row">
+                        <div class="step-container" id="2">
+                            <div class="step-ref passed">2</div>
+                            <div class="step-cell passed">* def Pet =</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="preformatted" data-parent="2">{
+    "id": 25,
+    "category": {
+      "id": 25,
+      "name": "Big Dog"
+    },
+    "name": "Dogo Argentino",
+    "photoUrls": [
+        "string"
+        ],
+    "tags": [
+    {
+      "id": 25,
+      "name": "Dogo Argentino"
+     }
+  ],
+  "status": "available"
+  }</div>
+                    <div class="step-row">
+                        <div class="step-container" id="3">
+                            <div class="step-ref passed">3</div>
+                            <div class="step-cell passed">Given url 'https://petstore.swagger.io/v2/pet/'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="4">
+                            <div class="step-ref passed">4</div>
+                            <div class="step-cell passed">And request Pet</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="5">
+                            <div class="step-ref passed">5</div>
+                            <div class="step-cell passed">When method post</div>
+                        </div>
+                        <div class="time-cell passed">1230</div>
+                    </div>
+                    <div class="preformatted" data-parent="5">23:17:40.039 request:
+1 &gt; POST https://petstore.swagger.io/v2/pet/
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 158
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: petstore.swagger.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+{"id":25,"category":{"id":25,"name":"Big Dog"},"name":"Dogo Argentino","photoUrls":["string"],"tags":[{"id":25,"name":"Dogo Argentino"}],"status":"available"}
+
+23:17:40.944 response time in milliseconds: 915,45
+1 &lt; 200
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Fri, 26 Feb 2021 02:17:38 GMT
+1 &lt; Server: Jetty(9.2.9.v20150224)
+1 &lt; Transfer-Encoding: chunked
+{"id":25,"category":{"id":25,"name":"Big Dog"},"name":"Dogo Argentino","photoUrls":["string"],"tags":[{"id":25,"name":"Dogo Argentino"}],"status":"available"}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="6">
+                            <div class="step-ref passed">6</div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="7">
+                            <div class="step-ref passed">7</div>
+                            <div class="step-cell passed">* def id = response.id</div>
+                        </div>
+                        <div class="time-cell passed">9</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="8">
+                            <div class="step-ref passed">8</div>
+                            <div class="step-cell passed">* def name = response.name</div>
+                        </div>
+                        <div class="time-cell passed">3</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="9">
+                            <div class="step-ref passed">9</div>
+                            <div class="step-cell passed">* def category = response.category</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="10">
+                            <div class="step-ref passed">10</div>
+                            <div class="step-cell passed">* def tags = response.tags</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="11">
+                            <div class="step-ref passed">11</div>
+                            <div class="step-cell passed">* def status = response.status</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="12">
+                            <div class="step-ref passed">12</div>
+                            <div class="step-cell passed">* print 'created id is: ', id</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="preformatted" data-parent="12">23:17:40.975 [print] created id is:  25</div>
+                    <div class="step-row">
+                        <div class="step-container" id="13">
+                            <div class="step-ref passed">13</div>
+                            <div class="step-cell passed">* print 'created name is: ', name</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="preformatted" data-parent="13">23:17:40.975 [print] created name is:  Dogo Argentino</div>
+                    <div class="step-row">
+                        <div class="step-container" id="14">
+                            <div class="step-ref passed">14</div>
+                            <div class="step-cell passed">* print 'created tag is: ', category</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="preformatted" data-parent="14">23:17:40.975 [print] created tag is:  {
+  "name": "Big Dog",
+  "id": 25
+}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="15">
+                            <div class="step-ref passed">15</div>
+                            <div class="step-cell passed">* print 'created tag is: ', tags</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="15">23:17:40.975 [print] created tag is:  [
+  {
+    "name": "Dogo Argentino",
+    "id": 25
+  }
+]</div>
+                    <div class="step-row">
+                        <div class="step-container" id="16">
+                            <div class="step-ref passed">16</div>
+                            <div class="step-cell passed">* print 'created status is: ', status</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="preformatted" data-parent="16">23:17:40.975 [print] created status is:  available</div>
+                    <div class="step-row">
+                        <div class="step-container" id="17">
+                            <div class="step-ref passed">17</div>
+                            <div class="step-cell passed">Given path id</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="18">
+                            <div class="step-ref passed">18</div>
+                            <div class="step-cell passed">When method get</div>
+                        </div>
+                        <div class="time-cell passed">745</div>
+                    </div>
+                    <div class="preformatted" data-parent="18">23:17:40.990 request:
+2 &gt; GET https://petstore.swagger.io/v2/pet/25
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Connection: Keep-Alive
+2 &gt; Host: petstore.swagger.io
+2 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+
+23:17:41.732 response time in milliseconds: 740,56
+2 &lt; 200
+2 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+2 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Connection: keep-alive
+2 &lt; Content-Type: application/json
+2 &lt; Date: Fri, 26 Feb 2021 02:17:39 GMT
+2 &lt; Server: Jetty(9.2.9.v20150224)
+2 &lt; Transfer-Encoding: chunked
+{"id":25,"category":{"id":25,"name":"Big Dog"},"name":"Dogo Argentino","photoUrls":["string"],"tags":[{"id":25,"name":"Dogo Argentino"}],"status":"available"}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="19">
+                            <div class="step-ref passed">19</div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="20">
+                            <div class="step-ref passed">20</div>
+                            <div class="step-cell passed">And match response contains Pet</div>
+                        </div>
+                        <div class="time-cell passed">3</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="21">
+                            <div class="step-ref passed">21</div>
+                            <div class="step-cell passed">Given path id</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="22">
+                            <div class="step-ref passed">22</div>
+                            <div class="step-cell passed">When method get</div>
+                        </div>
+                        <div class="time-cell passed">710</div>
+                    </div>
+                    <div class="preformatted" data-parent="22">23:17:41.732 request:
+3 &gt; GET https://petstore.swagger.io/v2/pet/25
+3 &gt; Accept-Encoding: gzip,deflate
+3 &gt; Connection: Keep-Alive
+3 &gt; Host: petstore.swagger.io
+3 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+
+23:17:42.448 response time in milliseconds: 703,10
+3 &lt; 200
+3 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+3 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+3 &lt; Access-Control-Allow-Origin: *
+3 &lt; Connection: keep-alive
+3 &lt; Content-Type: application/json
+3 &lt; Date: Fri, 26 Feb 2021 02:17:40 GMT
+3 &lt; Server: Jetty(9.2.9.v20150224)
+3 &lt; Transfer-Encoding: chunked
+{"id":25,"category":{"id":25,"name":"Big Dog"},"name":"Dogo Argentino","photoUrls":["string"],"tags":[{"id":25,"name":"Dogo Argentino"}],"status":"available"}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="23">
+                            <div class="step-ref passed">23</div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="24">
+                            <div class="step-ref passed">24</div>
+                            <div class="step-cell passed">And match response.name contains "Dogo Argentino"</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="25">
+                            <div class="step-ref passed">25</div>
+                            <div class="step-cell passed">And match response.category.name contains "Big Dog"</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[2:57]">
+                        <div class="heading-container">
+                            <div class="scenario-tags"></div>
+                            <span class="scenario-keyword">Scenario: [2:57]</span><span class="scenario-name">get Pet with specific id </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 2153</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[2:57]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[2:57]bg">
+                        <div class="step-container" id="26">
+                            <div class="step-ref bg-step">26</div>
+                            <div class="step-cell passed">* url 'https://petstore.swagger.io/v2/pet/'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="26">23:17:42.465 karate.env system property was:</div>
+                    <div class="step-row">
+                        <div class="step-container" id="27">
+                            <div class="step-ref passed">27</div>
+                            <div class="step-cell passed">Given url 'https://petstore.swagger.io/v2/pet/'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="28">
+                            <div class="step-ref passed">28</div>
+                            <div class="step-cell passed">* def id = 15</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="29">
+                            <div class="step-ref passed">29</div>
+                            <div class="step-cell passed">Given path id</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="30">
+                            <div class="step-ref passed">30</div>
+                            <div class="step-cell passed">When method get</div>
+                        </div>
+                        <div class="time-cell passed">704</div>
+                    </div>
+                    <div class="preformatted" data-parent="30">23:17:42.468 request:
+1 &gt; GET https://petstore.swagger.io/v2/pet/15
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: petstore.swagger.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+
+23:17:43.171 response time in milliseconds: 703,02
+1 &lt; 200
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Fri, 26 Feb 2021 02:17:40 GMT
+1 &lt; Server: Jetty(9.2.9.v20150224)
+1 &lt; Transfer-Encoding: chunked
+{"id":15,"category":{"id":15,"name":"Big Dog"},"name":"Dogo Argentino","photoUrls":["string"],"tags":[{"id":15,"name":"Dogo Argentino"}],"status":"available"}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="31">
+                            <div class="step-ref passed">31</div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="32">
+                            <div class="step-ref passed">32</div>
+                            <div class="step-cell passed">Given path id</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="33">
+                            <div class="step-ref passed">33</div>
+                            <div class="step-cell passed">When method get</div>
+                        </div>
+                        <div class="time-cell passed">1447</div>
+                    </div>
+                    <div class="preformatted" data-parent="33">23:17:43.173 request:
+2 &gt; GET https://petstore.swagger.io/v2/pet/15
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Connection: Keep-Alive
+2 &gt; Host: petstore.swagger.io
+2 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+
+23:17:44.618 response time in milliseconds: 736,41
+2 &lt; 200
+2 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+2 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Connection: keep-alive
+2 &lt; Content-Type: application/json
+2 &lt; Date: Fri, 26 Feb 2021 02:17:41 GMT
+2 &lt; Server: Jetty(9.2.9.v20150224)
+2 &lt; Transfer-Encoding: chunked
+{"id":15,"category":{"id":15,"name":"Big Dog"},"name":"Dogo Argentino","photoUrls":["string"],"tags":[{"id":15,"name":"Dogo Argentino"}],"status":"available"}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="34">
+                            <div class="step-ref passed">34</div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="35">
+                            <div class="step-ref passed">35</div>
+                            <div class="step-cell passed">And match response.id contains id</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[3:71]">
+                        <div class="heading-container">
+                            <div class="scenario-tags"></div>
+                            <span class="scenario-keyword">Scenario: [3:71]</span><span class="scenario-name">Update a Pet with specific id </span>
+                        </div>
+                        <div class="scenario-time failed">ms: 4</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[3:71]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[3:71]bg">
+                        <div class="step-container" id="36">
+                            <div class="step-ref bg-step">36</div>
+                            <div class="step-cell passed">* url 'https://petstore.swagger.io/v2/pet/'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="36">23:17:44.623 karate.env system property was:</div>
+                    <div class="step-row">
+                        <div class="step-container" id="37">
+                            <div class="step-ref passed">37</div>
+                            <div class="step-cell passed">* def Pet_put =</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="37">{
+    "id": 25,
+    "category": {
+      "id": 25,
+      "name": "small dog"
+    },
+    "name": "Pomerania",
+    "photoUrls": [
+        "string"
+        ],
+    "tags": [
+    {
+      "id": 25,
+      "name": "Pomerania"
+     }
+  ],
+  "status": "sold"
+  }</div>
+                    <div class="step-row">
+                        <div class="step-container" id="38">
+                            <div class="step-ref passed">38</div>
+                            <div class="step-cell passed">Given url 'https://petstore.swagger.io/v2/pet/'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="39">
+                            <div class="step-ref failed">39</div>
+                            <div class="step-cell failed">And request Pet</div>
+                        </div>
+                        <div class="time-cell failed">4</div>
+                    </div>
+                    <div class="preformatted" data-parent="39">Pets.feature:96 - evaluation (js) failed: Pet, javax.script.ScriptException: ReferenceError: "Pet" is not defined in &lt;eval&gt; at line number 1
+stack trace: jdk.scripting.nashorn/jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:477)</div>
+                    <div class="step-row">
+                        <div class="step-container" id="40">
+                            <div class="step-ref skipped">40</div>
+                            <div class="step-cell skipped">When method Put</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="41">
+                            <div class="step-ref skipped">41</div>
+                            <div class="step-cell skipped">Then status 200</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="42">
+                            <div class="step-ref skipped">42</div>
+                            <div class="step-cell skipped">* def id_put = response.id</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="43">
+                            <div class="step-ref skipped">43</div>
+                            <div class="step-cell skipped">* def name_put = response.name</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="44">
+                            <div class="step-ref skipped">44</div>
+                            <div class="step-cell skipped">* def category_put = response.category</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="45">
+                            <div class="step-ref skipped">45</div>
+                            <div class="step-cell skipped">* def tags_put = response.tags</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="46">
+                            <div class="step-ref skipped">46</div>
+                            <div class="step-cell skipped">* def status_put = response.status</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="47">
+                            <div class="step-ref skipped">47</div>
+                            <div class="step-cell skipped">* print 'created id is: ', id_put</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="48">
+                            <div class="step-ref skipped">48</div>
+                            <div class="step-cell skipped">* print 'created name is: ', name_put</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="49">
+                            <div class="step-ref skipped">49</div>
+                            <div class="step-cell skipped">* print 'created tag is: ', category_put</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="50">
+                            <div class="step-ref skipped">50</div>
+                            <div class="step-cell skipped">* print 'created tag is: ', tags_put</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="51">
+                            <div class="step-ref skipped">51</div>
+                            <div class="step-cell skipped">* print 'created status is: ', status_put</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="52">
+                            <div class="step-ref skipped">52</div>
+                            <div class="step-cell skipped">Given path id</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="53">
+                            <div class="step-ref skipped">53</div>
+                            <div class="step-cell skipped">When method get</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="54">
+                            <div class="step-ref skipped">54</div>
+                            <div class="step-cell skipped">Then status 200</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="55">
+                            <div class="step-ref skipped">55</div>
+                            <div class="step-cell skipped">And match response.name contains "Pomerania"</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+           
+  
+    </body>
+    
+</html>

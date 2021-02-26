@@ -1,0 +1,249 @@
+<testsuite failures="0" name="src/test/java/PetStores/Pets.feature" skipped="0" tests="4" time="8.811644">
+  <testcase classname="src.test.java.PetStores.Pets" name="create a Pet and then get it by id" time="2.704682">
+    <system-out>* url 'https://petstore.swagger.io/v2/pet/' ............................... passed
+* def Pet = ............................................................... passed
+Given url 'https://petstore.swagger.io/v2/pet/' ........................... passed
+And request Pet ........................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+* def id = response.id .................................................... passed
+* def name = response.name ................................................ passed
+* def category = response.category ........................................ passed
+* def tags = response.tags ................................................ passed
+* def status = response.status ............................................ passed
+* print 'created id is: ', id ............................................. passed
+* print 'created name is: ', name ......................................... passed
+* print 'created tag is: ', category ...................................... passed
+* print 'created tag is: ', tags .......................................... passed
+* print 'created status is: ', status ..................................... passed
+Given path id ............................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response contains Pet ........................................... passed
+Given path id ............................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.name contains "Dogo Argentino" ......................... passed
+And match response.category.name contains "Big Dog" ....................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.PetStores.Pets" name="create a Pet and then get it by id" time="2.271387">
+    <system-out>* url 'https://petstore.swagger.io/v2/pet/' ............................... passed
+* def Pet = ............................................................... passed
+Given url 'https://petstore.swagger.io/v2/pet/' ........................... passed
+And request Pet ........................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+* def id = response.id .................................................... passed
+* def name = response.name ................................................ passed
+* def category = response.category ........................................ passed
+* def tags = response.tags ................................................ passed
+* def status = response.status ............................................ passed
+* print 'created id is: ', id ............................................. passed
+* print 'created name is: ', name ......................................... passed
+* print 'created tag is: ', category ...................................... passed
+* print 'created tag is: ', tags .......................................... passed
+* print 'created status is: ', status ..................................... passed
+Given path id ............................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response contains Pet ........................................... passed
+Given path id ............................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.name contains "Dogo Argentino" ......................... passed
+And match response.category.name contains "Big Dog" ....................... passed
+* url 'https://petstore.swagger.io/v2/pet/' ............................... passed
+* def Pet = ............................................................... passed
+Given url 'https://petstore.swagger.io/v2/pet/' ........................... passed
+And request Pet ........................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+* def id = response.id .................................................... passed
+* def name = response.name ................................................ passed
+* def category = response.category ........................................ passed
+* def tags = response.tags ................................................ passed
+* def status = response.status ............................................ passed
+* print 'created id is: ', id ............................................. passed
+* print 'created name is: ', name ......................................... passed
+* print 'created tag is: ', category ...................................... passed
+* print 'created tag is: ', tags .......................................... passed
+* print 'created status is: ', status ..................................... passed
+Given path id ............................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response contains Pet ........................................... passed
+Given path id ............................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.name contains "Gran Danes" ............................. passed
+And match response.category.name contains "Big Dog" ....................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.PetStores.Pets" name="get Pet with specific id" time="1.483072">
+    <system-out>* url 'https://petstore.swagger.io/v2/pet/' ............................... passed
+* def Pet = ............................................................... passed
+Given url 'https://petstore.swagger.io/v2/pet/' ........................... passed
+And request Pet ........................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+* def id = response.id .................................................... passed
+* def name = response.name ................................................ passed
+* def category = response.category ........................................ passed
+* def tags = response.tags ................................................ passed
+* def status = response.status ............................................ passed
+* print 'created id is: ', id ............................................. passed
+* print 'created name is: ', name ......................................... passed
+* print 'created tag is: ', category ...................................... passed
+* print 'created tag is: ', tags .......................................... passed
+* print 'created status is: ', status ..................................... passed
+Given path id ............................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response contains Pet ........................................... passed
+Given path id ............................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.name contains "Dogo Argentino" ......................... passed
+And match response.category.name contains "Big Dog" ....................... passed
+* url 'https://petstore.swagger.io/v2/pet/' ............................... passed
+* def Pet = ............................................................... passed
+Given url 'https://petstore.swagger.io/v2/pet/' ........................... passed
+And request Pet ........................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+* def id = response.id .................................................... passed
+* def name = response.name ................................................ passed
+* def category = response.category ........................................ passed
+* def tags = response.tags ................................................ passed
+* def status = response.status ............................................ passed
+* print 'created id is: ', id ............................................. passed
+* print 'created name is: ', name ......................................... passed
+* print 'created tag is: ', category ...................................... passed
+* print 'created tag is: ', tags .......................................... passed
+* print 'created status is: ', status ..................................... passed
+Given path id ............................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response contains Pet ........................................... passed
+Given path id ............................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.name contains "Gran Danes" ............................. passed
+And match response.category.name contains "Big Dog" ....................... passed
+* url 'https://petstore.swagger.io/v2/pet/' ............................... passed
+Given url 'https://petstore.swagger.io/v2/pet/' ........................... passed
+* def id = 26 ............................................................. passed
+Given path id ............................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+Given path id ............................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.id contains id ......................................... passed
+* def id = response.id .................................................... passed
+* def name = response.name ................................................ passed
+* def category = response.category ........................................ passed
+* def tags = response.tags ................................................ passed
+* def status = response.status ............................................ passed
+* print 'created id is: ', id ............................................. passed
+* print 'created name is: ', name ......................................... passed
+* print 'created tag is: ', category ...................................... passed
+* print 'created tag is: ', tags .......................................... passed
+* print 'created status is: ', status ..................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.PetStores.Pets" name="Update a Pet with specific id" time="2.352502">
+    <system-out>* url 'https://petstore.swagger.io/v2/pet/' ............................... passed
+* def Pet = ............................................................... passed
+Given url 'https://petstore.swagger.io/v2/pet/' ........................... passed
+And request Pet ........................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+* def id = response.id .................................................... passed
+* def name = response.name ................................................ passed
+* def category = response.category ........................................ passed
+* def tags = response.tags ................................................ passed
+* def status = response.status ............................................ passed
+* print 'created id is: ', id ............................................. passed
+* print 'created name is: ', name ......................................... passed
+* print 'created tag is: ', category ...................................... passed
+* print 'created tag is: ', tags .......................................... passed
+* print 'created status is: ', status ..................................... passed
+Given path id ............................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response contains Pet ........................................... passed
+Given path id ............................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.name contains "Dogo Argentino" ......................... passed
+And match response.category.name contains "Big Dog" ....................... passed
+* url 'https://petstore.swagger.io/v2/pet/' ............................... passed
+* def Pet = ............................................................... passed
+Given url 'https://petstore.swagger.io/v2/pet/' ........................... passed
+And request Pet ........................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+* def id = response.id .................................................... passed
+* def name = response.name ................................................ passed
+* def category = response.category ........................................ passed
+* def tags = response.tags ................................................ passed
+* def status = response.status ............................................ passed
+* print 'created id is: ', id ............................................. passed
+* print 'created name is: ', name ......................................... passed
+* print 'created tag is: ', category ...................................... passed
+* print 'created tag is: ', tags .......................................... passed
+* print 'created status is: ', status ..................................... passed
+Given path id ............................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response contains Pet ........................................... passed
+Given path id ............................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.name contains "Gran Danes" ............................. passed
+And match response.category.name contains "Big Dog" ....................... passed
+* url 'https://petstore.swagger.io/v2/pet/' ............................... passed
+Given url 'https://petstore.swagger.io/v2/pet/' ........................... passed
+* def id = 26 ............................................................. passed
+Given path id ............................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+Given path id ............................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.id contains id ......................................... passed
+* def id = response.id .................................................... passed
+* def name = response.name ................................................ passed
+* def category = response.category ........................................ passed
+* def tags = response.tags ................................................ passed
+* def status = response.status ............................................ passed
+* print 'created id is: ', id ............................................. passed
+* print 'created name is: ', name ......................................... passed
+* print 'created tag is: ', category ...................................... passed
+* print 'created tag is: ', tags .......................................... passed
+* print 'created status is: ', status ..................................... passed
+* url 'https://petstore.swagger.io/v2/pet/' ............................... passed
+* def Pet_put = ........................................................... passed
+Given url 'https://petstore.swagger.io/v2/pet/' ........................... passed
+And request Pet_put ....................................................... passed
+When method Put ........................................................... passed
+Then status 200 ........................................................... passed
+* def id_put = response.id ................................................ passed
+* def name_put = response.name ............................................ passed
+* def category_put = response.category .................................... passed
+* def tags_put = response.tags ............................................ passed
+* def status_put = response.status ........................................ passed
+* print 'created id is: ', id_put ......................................... passed
+* print 'created name is: ', name_put ..................................... passed
+* print 'created tag is: ', category_put .................................. passed
+* print 'created tag is: ', tags_put ...................................... passed
+* print 'created status is: ', status_put ................................. passed
+Given path id_put ......................................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.name contains "Pomerania" .............................. passed
+Given path id_put ......................................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response contains Pet_put ....................................... passed</system-out>
+  </testcase>
+</testsuite>
